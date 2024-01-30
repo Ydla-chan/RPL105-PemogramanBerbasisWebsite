@@ -1,0 +1,19 @@
+<html>
+    <script language="javascript">
+        function radio_box(form){
+            var ket="";
+            if (form.pilih.checked == true)
+            ket=" Memilih Ya";
+            else
+            ket="Tidak Memilih";
+        alert('Anda'  +ket);
+        }
+    </script>
+    Mengunakan Radio Object 
+    <form>
+        <input type="radio" name="pilih" value="Memilih Ya"> Ya </p>
+        <hr>
+        <input type="button" value="CONFIRM" onclick="radio_box(this.form)">
+        <input type="reset" value="reset">
+    </form>
+</html>

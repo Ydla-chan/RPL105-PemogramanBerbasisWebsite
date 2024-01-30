@@ -1,0 +1,19 @@
+<html>
+    <script language="Javascript">
+        function check_box(form) {
+            var ket1="";
+            var ket2="";
+            if(form.satu.checked == true) ket1="Satu";
+            if(form.dua.checked == true) ket2="Dua";
+            alert('Anda Memilih Checkbox'+ket1+''+ket2);
+        }
+    </script>
+Mengunakan Checkbox
+<form>
+    <input type="checkbox" name="satu"> Satu 
+    <input type="checkbox" name="dua"> Dua
+    <hr>
+    <input type="button" value="CONFIRM" onclick="check_box(this.form)"
+    <input type="reset" value="Reset">
+</form>
+</html>

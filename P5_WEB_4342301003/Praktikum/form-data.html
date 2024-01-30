@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function cek_data() {
+            if (document.getElementById('Nama').value == '') {
+                alert('Nama tidak boleh kosong');
+                document.getElementById('Nama').focus();
+                return false;
+            }
+            if (document.getElementById('Alamat').value == '') {
+                alert('Alamat tidak boleh kosong');
+                document.getElementById('Alamat').focus();
+                return false;
+            }
+            if (document.getElementById('Tempat Tanggal Lahir').value == '') {
+                alert('Tempat Tanggal lahir tidak boleh kosong');
+                document.getElementById('Tempat Tanggal Lahir').focus();
+                return false;
+            }
+            if (document.getElementById('Alamat').value == '') {
+                alert('Alamat tidak boleh kosong');
+                document.getElementById('Alamat').focus();
+                return false
+            }
+            if (document.getElementById('Asal Sekolah').value == '') {
+                alert('Asal Sekolah tidak boleh kosong');
+                document.getElementById('Asal Sekolah').focus();
+                return false
+            }
+            if (document.getElementById('Jurusan Dipilih').value == '') {
+                alert('Jurusan Dipilih tidak boleh kosong');
+                document.getElementById('Jurusan Dipilih').focus();
+                return false;
+            }
+            document.getElementById('form').submit();
+        }
+    </script>
+    <form name="form" id="form" action="" method="post" />
+   <h3><b>Formulir Pendaftaran Calon Siswa Baru</b></h3>
+   <hr>
+
+    <form id="registration-form" name="form">
+            <table>
+                <tr>
+                    <td>NISN</td>
+                    <td><input type="number" name="nisn"></td>
+                </tr>
+                <tr>
+                    <td>NIK</td>
+                    <td><input type="number" name="nik"></td>
+                </tr>
+                <tr>
+                    <td>Nama</td>
+                    <td><input type="text" name="nama"></td>
+                </tr>
+                <tr>
+                    <td>Tanggal Lahir</td>
+                    <td><input type="date" name="tanggalLahir"></td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td><input type="text" name="alamat"></td>
+                </tr>
+                <tr>
+                    <td>
+                            Pendidikan Terakhir </td>
+                            <td>
+                            <select name="asalsekolah" size="1">
+                            <option value=""> - Asal Sekolah </option>
+                            <option value="SMA">SMA</option>
+                            <option value="SMK">SMK</option>
+                            <option value="MAN">MAN</option></PRE>
+                        </select>
+                    </td>
+                </tr>
+                <!-- <tr>
+                    <td>
+                            Tahun Kelulusan</td>
+                            <td>
+                            <select name="thnkelulusan" size="1">
+                            <option value=""> - Tahun Kelulusan - </option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                        </PRE>
+                        </select>
+                    </td>
+                </tr> -->
+                <tr>
+                    <td>
+                        <label>
+                            Jurusan 
+                        </label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="jurusan" value="Teknik Elektro" id=""> <label for="">Teknik Elektro</label>
+                    </td>
+                    </tr>
+                    <td>    
+                    </td></td>
+                    <td>
+                        <input type="checkbox" name="jurusan" value="Teknik Informatika" id=""> Teknik Informatika
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="checkbox" name="jurusan" value="Manajemen Bisnis" id=""> Manajemen Bisnis
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="checkbox" name="jurusan" value="Teknik mesin" id=""> Teknik Mesin
+                    </td>
+                </tr>
+                 <tr>
+                <td>
+                    Program Studi</td>
+                <td><select name="prostudi" size="1">
+                        <option value="">-- Program Studi yang diambil -- </option>
+                        <option value="D2-Jalur Cepat Distribusi Barang">D2 - Jalur Cepat Distribusi Barang</option>
+                        <option value="D3-Akuntasi">D3 - Akuntasi</option>
+                        <option value="D3-Informatika">D3 - Informatika</option>
+                        <option value="D3-Teknik Elektronika Manufaktur">D3 - Teknologi Elektronika Manufaktur</option>
+                        <option value="D3-Teknologi Geomatika">D3 - Teknologi Geomatika</option>
+                        <option value="D3-Teknik Instrumentasi">D3 - Teknik Instrumentasi</option>
+                        <option value="D3-Teknik Mesin ">D3 - Teknik Mesin</option>
+                        <option value="D3-Teknik Perawatan Pesawat Udara ">D3-Teknik Perawatan Pesawat Udara</option>
+                        <option value="D4-Akuntasi Manajerial">D4 - Akuntasi Manajerial</option>
+                        <option value="D4-Administrasi Bisnis Terapan">D4 - Administrasi Bisnis Terapan</option>
+                        <option value="D4-Logistik Perdagangan Internasional">D4 - Akuntasi Manajerial</option>
+                        <option value="D4-Administrasi Bisnis Terapan (International Class)">D4 - Administrasi Bisnis Terapan (International)</option>
+                        <option value="D4-Animasi">D4 - Animasi</option>
+                        <option value="D4-Teknologi Rekayasa Multimedia">D4 - Teknologi Rekayasa Multimedia</option>
+                        <option value="D4-Rekayasa Keamanan Siber">D4 - Rekayasa Keamanan Siber</option>
+                        <option value="D4-Teknologi Rekayasa Perangkat Lunak ">D4 - Teknologi Rekayasa Perangkat Lunak </option>
+                        <option value="D4-Teknologi Rekayasa Elektronika">D4 - Teknik Rekayasa Elektronika</option>
+                        <option value="D4-Teknik Mekatronika">D4 - Teknik Mekatronika</option>
+                        <option value="D4-Teknologi Rekayasa Pembangkit Energi">D4 - Teknologi Rekaya Pembangkit Energi</option>
+                        <option value="D4-Teknologi Robotika ">D4 - Teknik Robotika</option>
+                        <option value="D4-Teknologi Rekayasa Kontruksi Perkapalan ">D4 - Teknologi Rekayasa Kontruksi Perkapalan</option>
+                        <option value="D4-Teknik Rekayasa Pengelasan Fabrikasi">D4 - Teknik Rekayasa Pengelasan Fabrikasi</option>
+                    </select>
+                </td>
+            </tr> 
+                <tr>
+                    <td>
+                        <label>Jenjang Sarjana :</label>
+                        <!-- <input type="radio" value="diploma" > -->
+                    </td>
+                    <td>
+                        <input type="radio" name="jenjang" value="Diploma 2 - D2">Diploma 2
+                            <input type="radio" name="jenjang" value="Diploma 3 - D3">Diploma 3
+                            <input type="radio" name="jenjang" value="Sarjana Terapan - D4" id="">Sarjana Terapan
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <input type="button" value="Simpan Perubahan" onclick="EvenTekan()">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+                </PRE>
+            </table>
+        </body>
+
+            <hr>
+            <PRE>
+<h3><b>Cetak Data Pribadi Calon Mahasiswa Baru</b></h3>
+NISN                : <textarea type="text" name="nisnHasil" rows=2 id=""></textarea>
+NIK                 : <textarea type="text" name="nikHasil" id=""></textarea>
+Nama                : <textarea type="text" name="namaHasil" id=""></textarea>
+Tanggal Lahir       : <textarea type="text" name="tempattanggallahirHasil" id=""></textarea>
+Alamat              : <textarea type="text" name="alamatHasil" id=""></textarea>
+Pendidikan Terakhir : <textarea type="text" name="asalsekolahHasil" id=""></textarea>
+<!-- Tahun Masuk         : <textarea type="text" name="thnkelulusanHasil" id=""></textarea> -->
+Program Studi       : <textarea type="text" name="prostudiHasil" id=""></textarea>
+Jurusan             : <textarea type="text" name="jurusanHasil" id="" size="30"></textarea>
+Jenjang             : <textarea type="text" name="jenjangHasil" id=""></textarea>
+            <div id="tampil"></div>
+        </form>
+        <script>
+            function EvenTekan(){
+                // var thnkelulusanHasil = (document.form.thnkelulusan.value)
+                // document.form.thnkelulusanHasil.value=thnkelulusan
+                var namaHasil = (document.form.nama.value)
+                document.form.namaHasil.value=namaHasil
+                var nisnHasil = (document.form.nisn.value)
+                document.form.nisnHasil.value=nisnHasil
+                var nikHasil = (document.form.nik.value)
+                document.form.nikHasil.value=nikHasil
+                var tanggalLahir = (document.form.tanggalLahir.value)
+                document.form.tempattanggallahirHasil.value=tanggalLahir
+                var asalsekolahHasil = (document.form.asalsekolah.value)
+                document.form.asalsekolahHasil.value=asalsekolahHasil
+                var alamatHasil = (document.form.alamat.value)
+                document.form.alamatHasil.value=alamatHasil
+                var prostudiHasil = (document.form.prostudi.value)
+                document.form.prostudiHasil.value=prostudiHasil
+
+                var valueCheckbox = document.getElementsByName("jurusan")
+                var jurusan = ""
+                for(var data = 0; data < valueCheckbox.length; data++){
+                    if(valueCheckbox[data].checked){
+                        jurusan = jurusan + valueCheckbox[data].value + " "
+                        document.form.jurusanHasil.value=jurusan
+            
+                    }
+                }
+                
+                var jenjangHasil = (document.form.jenjang.value)
+                document.form.jenjangHasil.value=jenjangHasil
+            }
+        </script>
+        </PRE>
+    </body>
+    </html>

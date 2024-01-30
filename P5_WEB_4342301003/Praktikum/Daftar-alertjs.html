@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Ulang Mahasiswa Baru</title>
+</head>
+
+<body>
+  <h3 align="left"> FORMULIR PENDAFTARAN CALON MAHASISWA BARU</h3>
+  <hr>
+    <form action="" method="post">
+        <table align="left">
+            <tr>
+                <td>NISN</td>
+                <td>:</td>
+                <td>
+                    <input type="number" name="nisn" placeholder="Masukan NISN " id="nisn">
+                </td>
+            </tr>
+            <tr>
+                <td>Nama Lengkap</td>
+                <td>:</td>
+                <td>
+                    <input type="text" name="namalngkp" placeholder="Masukan Nama Lengkap" id="namalngkp">
+                </td>
+            </tr>
+            <tr>
+                <td>Tanggal lahir</td>
+                <td>:</td>
+                <td>
+                    <input type="date" name="tglhr" id="tglhr" />
+                </td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>:</td>
+                <td>
+                    <input type="radio" name="laki" value="laki" id="lk"> Laki Laki
+                    <input type="radio" name="Perempuan" value="Perempuan" id="pr"> Perempuan
+
+                </td>
+            </tr>
+            <tr>
+                <td>Agama</td>
+                <td>:</td>
+                <td><select name="agama" id="agama">
+                        <option value="">- Silahkan Pilih -</option>
+                        <option value="islam"> Islam
+                        <option value="Kristen Protestan"> Kristen Protestan
+                        <option value="Kristen Katholik">Kristen Katholik
+                        <option value="Hindu"> Hindu
+                        <option value="Buddha"> Buddha
+                        <option value="Khonghucu"> Khonghucu
+                    </select></br></td>
+            </tr>
+            <tr>
+                <td>Anak Ke </td>
+                <td>:</td>
+                <td>
+                    <input type="text" name="NIk" placeholder="Masukan Anak Keberapa" id="anakke">
+                </td>
+            </tr>
+            <tr>
+                <td>Jumlah Saudara</td>
+                <td>:</td>
+                <td>
+                    <input type="text" name="NIk" placeholder="Masukan Jumlah Saudara " id="jlmhsdr">
+                </td>
+            </tr>   
+            <tr>
+              <td>Alamat Rumah</td>
+              <td>:</td>
+              <td>
+                  <textarea id="alamat" rows="2" cols="30" placeholder="Masukan Alamat tempat tinggal"></textarea>
+              </td>
+          </tr>   
+                <td></td>
+                <td></td>
+                <td>
+                    <input type="submit" value="Simpan" onclick="validasi_data(); return false">
+                    <input type="reset" value="Reset">
+                  </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+<script>
+    function validasi_data() {
+      if (document.getElementById('nisn').value == "") {
+        alert("Anda belum mengisi NISN")
+        document.getElementById('nisn').focus()
+        return false
+      }
+      if (document.getElementById('namalngkp').value == "") {
+        alert("Anda belum mengisi Nama Lengkap")
+        document.getElementById('namalngkp').focus()
+        return false
+      }
+
+      if (document.getElementById('tglhr').value === "") {
+        alert("Anda belum mengisi Tanggal Lahir")
+        document.getElementById('tglhr').focus()
+        return false
+      }
+      if (document.getElementById('lk').checked || document.getElementById('pr').checked) {
+      } else {
+        alert("Anda belum memilih Jenis Kelamin")
+        return false
+      }
+      if (document.getElementById('agama').value == "") {
+        alert("Anda belum mengisi Agama")
+        document.getElementById('agama').focus()
+        return false
+      }
+      if (document.getElementById('anakke').value === "") {
+        alert("Anda belum mengisi Anak ke")
+        document.getElementById('anakke').focus()
+        return false
+      }
+      if (document.getElementById('jlmhsdr').value === "") {
+        alert("Anda belum mengisi Jumlah Saudara")
+        document.getElementById('jlmhsdr').focus()
+        return false
+      }
+      if (document.getElementById('alamat').value === "") {
+        alert("Anda belum mengisi Alamat Tempat Tinggal")
+        document.getElementById('alamat').focus()
+        return false
+      }
+      if (confirm("Apakah anda yakin ingin menyimpan?")) {
+        alert("Data sudah tersimpan!")
+        reset()
+      }
+    }
+
+  </script>
+</html>

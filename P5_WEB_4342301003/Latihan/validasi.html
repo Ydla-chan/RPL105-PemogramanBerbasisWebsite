@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Validasi Form</title>
+    </head>
+    <body>
+        <form name="form1" id="form1" action="" method="post"/>
+        <dl>
+            <dt>Nama</dt>
+            <dd><input name="nama" id="nama" type="text"/></dd>
+            <dt>Alamat</dt>
+            <dd><input name="alamat" id="alamat" type="text"/></dd>
+            <dt>Email</dt>
+            <dd><input name="email" id="email" type="text"/></dd>
+            <dt>Nomor Handphone</dt>
+            <dd><input name="hp" id="hp" type="text"/></dd>
+            <dt></dt>
+            <dd><input type="button" name="save id="save" value="Save" onclick="cek_data(); return false;"></dd>
+        </dl>
+    </body>
+    <script type="text/javascript">
+        function cek_data(){
+            if(document.getElementById('nama').value == ''){
+                alert('Nama Tidak Boleh Dikosong');
+                document.getElementById('nama').focus();
+                return false;
+            }
+            if(document.getElementById('alamat').value == ''){
+                alert('Alamat Tidak Boleh Dikosong');
+                document.getElementById('alamat').focus();
+                return false;
+            }
+            if(document.getElementById('email').value == ''){
+                alert('email Tidak Boleh Dikosong');
+                document.getElementById('email').focus();
+                return false;
+            }
+            if(document.getElementById('hp').value == ''){
+                alert('Nomor Handphone Tidak Boleh Dikosong');
+                document.getElementById('hp').focus();
+                return false;
+            }
+            document.getElementById('form1').submit();
+        }
+    </script>
+</html>
