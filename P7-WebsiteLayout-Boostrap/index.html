@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crytal Computer </title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex justify-content-between align-items-center order-lg-0" href="index.html">
+                <img src="images/shopping-bag-icon.png" alt="site icon">
+                <span class="text-uppercase fw-lighter ms-2">Crytal Computer</span>
+            </a>
+
+            <div class="order-lg-2 nav-btns">
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">5</span>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-heart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#header">home</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#rekomendasi">Recommended</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#applebrand">Apple</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#vendor">Vendor</a>
+                    </li>
+                    <li class="nav-item px-2 py-2 border-0">
+                        <a class="nav-link text-uppercase text-dark" href="#about">about us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- header -->
+    <header id="header" class="vh-100 carousel slide" data-bs-ride="carousel" style="padding-top: 104px;">
+        <div class="container h-100 d-flex align-items-center carousel-inner">
+            <div class="text-center carousel-item active">
+                <h2 class="text-capitalize text-white">Crytal Computer</h2>
+                <h1 class="text-capitalize py-2 fw-bold text-white">Office Laptop</h1>
+                <a href="index.html#rekomendasi" class="btn mt-3 text-uppercase">shop now</a>
+            </div>
+            <div class="text-center carousel-item">
+                <h2 class="text-capitalize text-white">Crytal Computer</h2>
+                <h1 class="text-capitalize py-2 fw-bold text-white">Gaming Laptop</h1>
+                <a href="index.html#rekomendasi" class="btn mt-3 text-uppercase">buy now</a>
+            </div>
+            <div class="text-center carousel-item">
+                <h2 class="text-capitalize text-white">Crytal Computer</h2>
+                <h1 class="text-capitalize py-2 fw-bold text-white">Pc Build</h1>
+                <a href="index.html#rekomendasi" class="btn mt-3 text-uppercase">buy now</a>
+            </div>
+            <div class="text-center carousel-item">
+                <h2 class="text-capitalize text-white">Crytal Computer</h2>
+                <h1 class="text-capitalize py-2 fw-bold text-white">Network Tool</h1>
+                <a href="#" class="btn mt-3 text-uppercase">buy now</a>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#header" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#header" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </header>
+    <!-- end of header -->
+
+    <!-- Rekomendasi -->
+    <section id="rekomendasi" class="py-5">
+        <div class="container">
+            <div class="title text-center">
+                <h2 class="position-relative d-inline-block">Recommended</h2>
+            </div>
+            <div class="row g-0">
+                <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                    <button type="button" class="btn m-2 text-dark active-filter-btn" data-filter="*">All</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter=".Office">Office Laptop</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter=".Gaming">Gaming Laptop</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter=".Network">Network Tool</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter=".Build">PC Build</button>
+                </div>
+
+                <div class="collection-list mt-4 row gx-0 gy-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 Office">
+                        <div class="collection-img position-relative">
+                            <img src="images/Hp1.jpeg" class="w-100">
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">LAPTOP HP 14S DQ5001TU , Intel® Core™ I5 1235U , 16GB ,
+                                512SSD ,IRISXE ,Window 11 +OHS </p>
+                            <span class="fw-bold">Rp8.399.000</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 Office">
+                        <div class="collection-img position-relative">
+                            <img src="images/hp2.jpeg" class="w-100">
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1"> HP ELITEBOOK 735 G5 - 09PA ,AMD Ryzen 7-2700U, 8GB, 512GB
+                                SSD, Window 10 Pro</p>
+                            <span class="fw-bold">Rp5.100.000</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 Gaming">
+                        <div class="collection-img position-relative">
+                            <img src="images/hp3.jpeg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">LAPTOP HP OMEN 15 , Intel® Core™ I7 11800H ,32GB , 1TB SSD ,
+                                RTX3060 ,15.6 FHD IPS 144HZ RGB ,WINDOW 11 HOME </p>
+                            <span class="fw-bold">Rp17.349.000</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 Office">
+                        <div class="collection-img position-relative">
+                            <img src="images/hp4.jpeg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">New</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Laptop HP Pavilion x360 14-ek0113TU Intel® Core™ i3-1215U
+                                8GB 512GB SSD Win11+OHS</p>
+                            <span class="fw-bold">Rp9.650.000</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 Office">
+                        <div class="collection-img position-relative">
+                            <img src="images/asus1.jpeg" class="w-100">
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1"> ASUS VivoBook 14 Intel® Core™ i3-1115G4 / Intel® UHD
+                                Graphics / 4GB*2 / 512GB / </p>
+                            <span class="fw-bold">Rp6.449.000</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 Office">
+                        <div class="collection-img position-relative">
+                            <img src="images/asus2.jpeg" class="w-100">
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">ASUS ZenBook Pro 14 Duo OLED UX8402ZE-OLEDS711 Intel® Core™
+                                i7-12700H / NVIDIA® GeForce® RTX™ 3050 Ti / 16GB / 1TB </p>
+                            <span class="fw-bold">Rp34.999.000</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 Gaming">
+                        <div class="collection-img position-relative">
+                            <img src="images/asus3.jpeg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">ASUS ROG Zephyrus M16 GU603ZM-I936G6T-O - Off Black</p>
+                            <span class="fw-bold">Rp39.999.000</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 Office">
+                        <div class="collection-img position-relative">
+                            <img src="images/asus4.jpeg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">ASUS ExpertBook EK5820X (Intel® Core™ i5-1135G7/8GB/256GB
+                                SSD/Windows 11 Pro) - Star Black</p>
+                            <span class="fw-bold">Rp13.119.000</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 Office">
+                        <div class="collection-img position-relative">
+                            <img src="images/lenovo1.jpeg" class="w-100">
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1"> Lenovo IdeaPad Slim 3i 14ITL6 Intel Core i3 1115G4 Win11
+                                8GB 256GB SSD 14" FHD </p>
+                            <span class="fw-bold">Rp7.889.000</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 Office">
+                        <div class="collection-img position-relative">
+                            <img src="images/lenovo2.jpeg" class="w-100">
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Lenovo 2in1 IdeaPad Flex 5i 14IRU8 6VID i5 1335U Win11 16GB
+                                512GB SSD 14" WUXGA OLED </p>
+                            <span class="fw-bold">Rp13.999.000</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 Gaming">
+                        <div class="collection-img position-relative">
+                            <img src="images/Lenovo3.jpeg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">LENOVO LOQ 15 GAMING RTX4050 6GB RYZEN 7 7840HS 8GB 512SSD
+                                W11+OHS 15.6WQHD GRY -3HID</p>
+                            <span class="fw-bold">Rp20.135.000</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 Office">
+                        <div class="collection-img position-relative">
+                            <img src="images/lenovo4.jpeg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">new</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Lenovo Yoga Duet 7i i5 1135G7 8GB 512GB 13 WQHD Iris Xe
+                                Win11 OHS2021</p>
+                            <span class="fw-bold">Rp15.949.000</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 Network">
+                        <div class="collection-img position-relative">
+                            <img src="images/sw1.png" class="w-100">
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1"> Tp-Link TL-SG2218P JetStram 18-Port Gigabit Switch With
+                                16-PoE+</p>
+                            <span class="fw-bold">Rp2.350.000</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 Network">
+                        <div class="collection-img position-relative">
+                            <img src="images/sw2.jpg" class="w-100">
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">
+                                Mikrotik CCR 2116 12G 4S+ CCR2116-12G-4S+ </p>
+                            <span class="fw-bold">Rp22.500.000</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 Network">
+                        <div class="collection-img position-relative">
+                            <img src="images/criping.jpg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Century Boutique Tang Cripping Tools RJ 45 RJ 11 Networking
+                                Tool</p>
+                            <span class="fw-bold">Rp29.231 </span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 Network">
+                        <div class="collection-img position-relative">
+                            <img src="images/cable.jpg" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">new</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">
+                                kabel LAN STP CAT 5e OUTDOOR BELDEN tipe 50105F warna HITAM @50 meter</p>
+                            <span class="fw-bold">Rp476.000</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 Build">
+                        <div class="collection-img position-relative">
+                            <img src="images/pcbuild.png" class="w-100">
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">OFFICE'S BOX V10.5 - Paket PC Rakitan Intel i</p>
+                            <span class="fw-bold">Rp3.799.000</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 Build">
+                        <div class="collection-img position-relative">
+                            <img src="images/pcbuild1.png" class="w-100">
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">Elite Pro - Paket Ryzen 5 PRO 4650G</p>
+                            <span class="fw-bold">Rp5.399.000</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 Build">
+                        <div class="collection-img position-relative">
+                            <img src="images/pcbuild2.png" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">GAMER'S BOX V115.0 RTX 4060 Ti - Paket PC Rakitan Intel Gen
+                                13</p>
+                            <span class="fw-bold">Rp18.349.000</span>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 Build">
+                        <div class="collection-img position-relative">
+                            <img src="images/pcbuild3.png" class="w-100">
+                            <span
+                                class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                                <span class="text-primary"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1"> BATTLE STATION V90.0 - Paket PC Rakitan AMD Radeon RX 7900
+                                XT</p>
+                            <span class="fw-bold">Rp35.699.000</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of collection -->
+
+    <!-- special products -->
+    <section id="applebrand" class="py-5">
+        <div class="container">
+            <div class="title text-center py-5">
+                <h2 class="position-relative d-inline-block">Apple Product</h2>
+            </div>
+
+            <div class="special-list row g-0">
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="images/macbook1.jpeg" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Apple MacBook Pro (13.3 inci, M2, 2022) 8C CPU, 10C GPU,
+                            256GB, Space Grey</p>
+                        <span class="fw-bold d-block">$ 45.50</span>
+                        <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="images/mac2.jpeg" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Apple MacBook Air (13.6 inci, M2, 2022) 8C CPU, 10C GPU,
+                            512GB, Midnight</p>
+                        <span class="fw-bold d-block">Rp23.999.000 </span>
+                        <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="images/mac3.jpeg" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Apple MacBook Pro (16 inci, 2019) 2.6GHz, 16GB RAM, 512GB
+                            SSD, Silver</p>
+                        <span class="fw-bold d-block">Rp37.299.000</span>
+                        <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative overflow-hidden">
+                        <img src="images/imca.jpeg" class="w-100">
+                        <span
+                            class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                            <i class="fas fa-heart"></i>
+                        </span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">Apple iMac (24 inci, M1, 2021) 8C CPU, 8C GPU, 8GB RAM,
+                            256GB SSD, Purple</p>
+                        <span class="fw-bold d-block">Rp25.999.000</span>
+                        <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Apple Product -->
+
+    <!-- Vendor -->
+    <section id="vendor" class="py-5">
+        <div class="container">
+            <div class="title text-center py-5">
+                <h2 class="position-relative d-inline-block">Our Vendor Company</h2>
+            </div>
+
+            <div class="row g-3">
+                <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src="images/Asus.jpeg" alt="">
+                    <div class="card-body px-0">
+                        <h4 class="card-title">ASUS</h4>
+                        <p class="card-text mt-3 text-muted">ASUS is passionate about technology and driven by
+                            innovation. We dream, we dare and we strive to create an effortless and joyful digital life
+                            for everyone. We're always in search of incredible ideas and experiences, and we aspire to
+                            deliver the incredible in everything we do.</p>
+                        <p class="card-text">
+                        </p>
+                        <a href="https://www.asus.com/" class="btn">Visit Me</a>
+                    </div>
+                </div>
+
+                <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src="images/Lenovo12.jpeg" alt="">
+                    <div class="card-body px-0">
+                        <h4 class="card-title">LENOVO</h4>
+                        <p class="card-text mt-3 text-muted">enovo is a global technology leader that designs, develops,
+                            and manufactures innovative products for a wide range of customers. Learn more about who we
+                        </p>
+                        <a href="https://www.lenovo.com/" class="btn">Visit Me</a>
+                    </div>
+                </div>
+                <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src="images/eb88e2ccea222edb18618943dc4807ab_tn.jpeg" alt="">
+                    <div class="card-body px-0">
+                        <h4 class="card-title">IBOX</h4>
+                        <p class="card-text mt-3 text-muted">iBox is a leading Reseller of Premium Apple Products in
+                            Indonesia which specializes in offering Apple products and various kinds of complementary
+                            accessories, software and others.</p>
+                        <a href="https://ibox.co.id/" class="btn">Visit Me</a>
+                    </div>
+                </div>
+
+                <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src="images/hp21.jpeg" alt="">
+                    <div class="card-body px-0">
+                        <h4 class="card-title">HP </h4>
+                        <p class="card-text mt-3 text-muted">We are a technology company born of the belief that
+                            companies should do more than just make a profit. They should make the world a better place.
+                            Our efforts in climate action, human rights, and digital equity prove that we are doing
+                            everything in our power to make it so.
+                            With over 80 years of actions that prove our intentions, we have the confidence to envision
+                            a world where innovation drives extraordinary contributions to humanity.</p>
+                        <a href="https://www.hp.com/" class="btn">Visit Me</a>
+                    </div>
+                </div>
+                <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src="images/Intel.jpeg" alt="">
+                    <div class="card-body px-0">
+                        <h4 class="card-title">Intel</h4>
+                        <p class="card-text mt-3 text-muted">We create world-changing technology that improves the life
+                            of every person on the planet.
+
+                            Intel put the silicon in Silicon Valley. For more than 50 years, Intel and our people have
+                            had a profound influence on the world, driving business and society forward by creating
+                            radical innovation that revolutionizes the way we live</p>
+                        <a href="https://www.intel.com/" class="btn">Visit Me</a>
+                    </div>
+                </div>
+                <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src="images/asa.jpeg" alt="">
+                    <div class="card-body px-0">
+                        <h4 class="card-title">AMD</h4>
+                        <p class="card-text mt-3 text-muted">AMD is the high performance and adaptive computing leader,
+                            powering the products and services that help solve the world’s most important challenges.
+                            Our technologies advance the future of the data center, embedded, gaming and PC markets.</p>
+                        <a href="https://www.amd.com/" class="btn">Visit Me</a>
+                    </div>
+                </div>
+
+                <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src="images/1304a208a832de1e056166e9f2696434_tn.jpeg" alt="">
+                    <div class="card-body px-0">
+                        <h4 class="card-title">NVIDIA® </h4>
+                        <p class="card-text mt-3 text-muted">“NVIDIA is reshaping the future of computing. We’ve built a
+                            culture where people can do their life's work. We are a learning machine. The mission is
+                            boss. Everyone has a voice.” — Jensen Huang</p>
+                        <a href="https://www.nvidia.com/" class="btn">Visit Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of Vendor -->
+
+    <!-- about us -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row gy-lg-5 align-items-center">
+                <div class="col-lg-6 order-lg-1 text-center text-lg-start">
+                    <div class="title pt-3 pb-5">
+                        <h2 class="position-relative d-inline-block ms-4">About Us</h2>
+                    </div>
+                    <h1>Crytal Computer</h1>
+                    <p>Alamat: Komplek Galaxy, Jl. Imam Bonjol No.10, Lubuk Baja Kota, Kec. Lubuk Baja, Kota Batam,
+                        Kepulauan Riau 29444</p>
+                </div>
+                <div class="col-lg-6 order-lg-0">
+                    <img src="images/cry.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of about us -->
+
+    <!-- footer -->
+    <footer class="bg-dark py-5">
+        <div class="container">
+            <div class="row text-white g-4">
+                <div class="col-md-6 col-lg-3">
+                    <a class="text-uppercase text-decoration-none brand text-white" href="index.html">Crytal
+                        Computer</a>
+                    <p class="text-white text-muted mt-3">Penyedian Kebutuhan IOT terlengkap Di kota batam</p>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light">Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="my-3">
+                            <a href="index.html" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i> Home
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="index.html#rekomendasi" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i> Recommended
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#applebrand" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i> Apple
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="index.html#vendor" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i> Vendor
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light mb-3">Contact Us</h5>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </span>
+                        <span class="fw-light">
+                            Alamat: Komplek Galaxy, Jl. Imam Bonjol No.10, Lubuk Baja Kota, Kec. Lubuk Baja, Kota Batam,
+                            Kepulauan Riau 29444
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span class="fw-light">
+                            crystal Computer
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="fas fa-phone-alt"></i>
+                        </span>
+                        <span class="fw-light">
+                            +9786 6776 236
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light mb-3">Follow Us</h5>
+                    <div>
+                        <ul class="list-unstyled d-flex">
+                            <li>
+                                <a href="https://www.facebook.com/crystalcomputerbatam/"
+                                    class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/crystalcomputerbatam/"
+                                    class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://wa.me/6282170695696?text=Hello%20,%20saya%20ingin%20konsultasi%20laptop%20"
+                                    class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+
+
+
+    <!-- jquery -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- bootstrap js -->
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
