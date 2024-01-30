@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Ulang Mahasiswa Baru</title>
+</head>
+
+<body>
+    <table>
+        <img align="left" width="190" height="150" src="./img/logo polibatam.png"></img>
+        <center>
+            <h3> POLITEKNIK NEGERI BATAM</h3>
+            <h3>TEKNIK INFORMATIKA</h3>
+            <h3>TEKNIK REKAYASA PERANGKAT LUNAK</h3>
+            <h4>Politeknik Negeri Batam Batam Center, Jl. Ahmad Yani, Batam, Kepulauan Riau 29461 Batam Kep. Riau</h5>
+        </center>
+    </table>
+    <hr size="5" color="#abc4ff">
+    <h3 align="center"> Formulir Daftar Ulang mahasiswa Polibatam Tahun 2024</h3>
+    <form action="" method="post">
+        <table align="center">
+            <tr>
+                <td>NIK</td>
+                <td>:</td>
+                <td>
+                    <input type="text" name="NIk" placeholder="Masukan NIK" id="Nik_mahasiswa">
+                </td>
+            </tr>
+            <tr>
+                <td>Nama</td>
+                <td>:</td>
+                <td>
+                    <input type="text" name="nama" placeholder="Masukan Nama" id="nama_mahasiswa">
+                </td>
+            </tr>
+            <tr>
+                <td>Tanggal lahir</td>
+                <td>:</td>
+                <td>
+                    <input type="date" name="tanggalLahir" />
+                </td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td>:</td>
+                <td>
+                    <textarea rows="2" cols="30" type="text" name="Alamat Rumah" placeholder="Masukan Alamat Rumah"
+                        id="Alamt_rumah"> </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Provinsi</td>
+                <td>:</td>
+                <td>
+                    <input type="text" name="Provinsi" placeholder="Masukan Provinsi" id="Provinsi">
+                </td>
+            </tr>
+            <tr>
+                <td>Kota</td>
+                <td>:</td>
+                <td>
+                    <input type="text" name="Kota" placeholder="Masukan Kota" id="Kota">
+                </td>
+            </tr>
+            <tr>
+                <td>Kecamatan</td>
+                <td>:</td>
+                <td>
+                    <input type="text" name="Kecamatan" placeholder="Masukan Kecamatan" id="Kecamatan">
+                </td>
+            </tr>
+            <tr>
+                <td>Kelurahan</td>
+                <td>:</td>
+                <td>
+                    <input type="text" name="Kelurahan" placeholder="Masukan Kelurahan" id="Kelurahan">
+                </td>
+            </tr>
+            <tr>
+                <td>Kode Pos</td>
+                <td>:</td>
+                <td>
+                    <input type="text" name="Kode Pos" placeholder="Masukan Kodepos" id="Kodepos">
+                </td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>:</td>
+                <td>
+                    <input type="radio" name="laki" value="laki"> Laki Laki
+                    <input type="radio" name="Perempuan" value="Perempuan"> Perempuan
+
+                </td>
+            </tr>
+            <tr>
+                <td>Perkerjaan</td>
+                <td>:</td>
+                <td><select name="work">
+                        <option value="">- Silahkan Pilih -</option>
+                        <option value="Berkerja"> Berkerja
+                        <option value="Berkerja Sambil Kuliah"> Berkerja sambil Kuliah
+                        <option value="kuliah"> Kuliah
+                        <option value="Tidak Berkerja"> Tidak Berkerja
+                    </select></br></td>
+            </tr>
+            <tr>
+                <td>Jalur Masuk </td>
+                <td>:</td>
+                <td>
+                    <input type="checkbox" name="jlrNilai" value="SNBP"> SNBP </br>
+                    <input type="checkbox" name="JlrUjian" value="SNBT"> SNBT </br>
+                    <input type="checkbox" name="JlrMandiri" value="mandiri">mandiri </br>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Upload Berkas berkas pendaftaran </br>
+                    Format Zib max 5mb
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="file" id="myFile" name="filename">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>
+                    <button type="submit" name="submitdata" id="submitdata" value="kirim">Kirim</button>
+                    <button type="reset">Reset</button>
+                    <a href="./Index.html"><button>Kembali</button></a>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</body>
+
+</html>
