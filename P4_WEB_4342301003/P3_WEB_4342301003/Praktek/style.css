@@ -1,0 +1,73 @@
+    .divatas {
+   border:2px   ;
+    border-color: black;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    width: 500px;
+    height: 100px;
+    text-align: center;
+    background-color: lightblue;
+    border-style: solid    ;
+
+}
+
+.divtengah {
+    border-style: solid;
+    
+    margin: 5px;
+    width: 500px;
+    height: 100px;
+    background-color: lightblue;
+
+}
+
+
+.divbawah {
+    border-style: solid;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    width:500px;
+    height: 100px;
+    background-color: lightblue;
+    text-align: center;
+}
+
+.kanan {
+    margin-top: 10px;
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    float: left;
+    border-style: dashed;
+    border-color: red;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.tengah {
+    width: 200px;
+     margin-top: 10px;
+    height: 100px;
+    float: right;
+    margin-right: 270px;
+    background-color: yellow;
+    border-style: dashed;
+    border-color: rgb(0, 0, 255);
+    text-align: center;
+}   
+
+.bawah{
+   width: 200px;
+   height: 100px;
+   float: right;
+   border: 3px;
+   margin-left: 490px;
+   background-color: yellow;
+   border-style: dashed;
+   border-color: rgb(0, 255, 0);
+   align-items: top;
+   margin-top : -105px;
+   margin-bottom: 20px;
+   text-align: center;          
+}
+

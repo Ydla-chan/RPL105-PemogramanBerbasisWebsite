@@ -1,0 +1,23 @@
+.table1 {
+    font-family: sans-serif;
+    color: #232323 border-collapse collapse;
+}
+
+.table1,
+th,
+tr {
+    border: 1px solid#999;
+    padding: 8px 20px;
+}
+
+.satu {
+    background-color: #eaeaea;
+}
+
+#dua {
+    background-color: yellow;
+}
+
+#tiga {
+    background-color: red;
+}
