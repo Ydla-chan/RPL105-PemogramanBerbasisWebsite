@@ -1,0 +1,4 @@
+Untuk database, terlebih dahulu membuat database bernama 'db_akademik' , kemudian import file db_akademik-p9.sql kedalam database db_akademik. 
+jika sudah selesai import , lakukan penambahan user account terhadap db_akademik dengan ketentuan sebagai berikut
+user = "admindyy"
+pass = "floald2731"
