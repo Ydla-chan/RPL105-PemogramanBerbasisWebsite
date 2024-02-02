@@ -1,2 +1,5 @@
 # RPL105-PemogramanBerbasisWebsite
-Backup Tugas RPL 105 Pemograman Berbasis Website
+
+Dosen Materi    : Noper Ardi, S.Pd., M.Eng
+
+Dosen Praktikum : Gilang Bagus Ramadhan, A.Md. Kom
